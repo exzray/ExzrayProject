@@ -16,6 +16,10 @@ public class PostModel {
     private String text_content;
     private String text_posted;
 
+    public PostModel() {
+        LIST.add(this);
+    }
+
     public String getText_name() {
         return text_name;
     }

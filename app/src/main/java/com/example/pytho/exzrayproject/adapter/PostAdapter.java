@@ -28,18 +28,20 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostVH> {
         // current data
         PostModel model = PostModel.LIST.get(i);
 
-//        "https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0f994eef47e5fb1a67849703cc961b3&auto=format&fit=crop&w=1350&q=80"
-//        "https://images.unsplash.com/photo-1483428400520-675ef69a3bc4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7df813acb5f2c1f7261ea675d078073f&auto=format&fit=crop&w=1267&q=80"
-
+        // user details
         Glide
                 .with(postVH.itemView.getContext())
                 .load(model.getImage_profile())
                 .into(postVH.image_profile);
+        postVH.text_name.setText(model.getText_name());
 
+        // post details
         Glide
                 .with(postVH.itemView.getContext())
                 .load(model.getImage_content())
                 .into(postVH.image_post);
+        postVH.text_posted.setText(model.getText_posted());
+        postVH.text_content.setText(model.getText_content());
     }
 
     @Override
