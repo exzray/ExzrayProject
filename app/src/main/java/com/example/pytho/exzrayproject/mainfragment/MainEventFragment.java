@@ -12,9 +12,9 @@ import com.example.pytho.exzrayproject.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MainChat extends Fragment {
+public class MainEventFragment extends Fragment {
 
-    public MainChat() {
+    public MainEventFragment() {
         // Required empty public constructor
     }
 
@@ -23,6 +23,6 @@ public class MainChat extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_chat, container, false);
+        return inflater.inflate(R.layout.fragment_main_event, container, false);
     }
 }

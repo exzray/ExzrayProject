@@ -16,11 +16,11 @@ import com.example.pytho.exzrayproject.R;
 import com.example.pytho.exzrayproject.adapter.PostAdapter;
 
 
-public class MainPost extends Fragment {
+public class MainPostFragment extends Fragment {
 
     RecyclerView mRecyclerView;
 
-    public MainPost() {
+    public MainPostFragment() {
         // Required empty public constructor
     }
 

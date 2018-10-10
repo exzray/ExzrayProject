@@ -8,9 +8,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 
-import com.example.pytho.exzrayproject.mainfragment.MainChat;
-import com.example.pytho.exzrayproject.mainfragment.MainEvent;
-import com.example.pytho.exzrayproject.mainfragment.MainPost;
+import com.example.pytho.exzrayproject.mainfragment.MainChatFragment;
+import com.example.pytho.exzrayproject.mainfragment.MainEventFragment;
+import com.example.pytho.exzrayproject.mainfragment.MainPostFragment;
 import com.example.pytho.exzrayproject.R;
 
 import java.util.ArrayList;
@@ -35,9 +35,9 @@ public class MainAdapter extends FragmentPagerAdapter {
         mList = new ArrayList<>();
 
         // create new fragments
-        MainPost post = new MainPost();
-        MainChat chat = new MainChat();
-        MainEvent event = new MainEvent();
+        MainPostFragment post = new MainPostFragment();
+        MainChatFragment chat = new MainChatFragment();
+        MainEventFragment event = new MainEventFragment();
 
         mList.add(post);
         mList.add(chat);
