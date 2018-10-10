@@ -52,4 +52,33 @@
         android:maxLines="4"
         android:text="@string/text_content"
         android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/post_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_text_description"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/post_button_like"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_thumb_up_black_24dp"
+            android:text="@string/text_like"
+            android:textColor="#bf000000" />
+
+        <Button
+            android:id="@+id/post_button_comment"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_comment_black_24dp"
+            android:text="@string/text_comment"
+            android:textColor="#bf000000" />
+    </LinearLayout>
 </RelativeLayout>

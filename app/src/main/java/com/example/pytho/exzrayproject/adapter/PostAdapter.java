@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -49,6 +50,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostVH> {
         private TextView text_date;
         private TextView text_description;
 
+        private Button button_like;
+        private Button button_comment;
+
         private PostVH(@NonNull View itemView) {
             super(itemView);
 
@@ -58,6 +62,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostVH> {
             text_name = itemView.findViewById(R.id.post_text_name);
             text_date = itemView.findViewById(R.id.post_text_datetime);
             text_description = itemView.findViewById(R.id.post_text_description);
+
+            button_like = itemView.findViewById(R.id.post_button_like);
+            button_comment = itemView.findViewById(R.id.post_button_comment);
         }
     }
 }
