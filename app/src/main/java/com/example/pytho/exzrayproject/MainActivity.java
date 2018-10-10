@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.pytho.exzrayproject.adapter.SwipeTab;
+import com.example.pytho.exzrayproject.adapter.MainAdapter;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     CoordinatorLayout mRoot;
     FloatingActionButton mActionButton;
 
-    SwipeTab mAdapter;
+    MainAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mToolbar = findViewById(R.id.main_toolbar);
         mActionButton = findViewById(R.id.main_fab);
 
-        mAdapter = new SwipeTab(getSupportFragmentManager(), mToolbar, mPager, mTab);
+        mAdapter = new MainAdapter(getSupportFragmentManager(), mToolbar, mPager, mTab);
 
         // widget setup
         setSupportActionBar(mToolbar);

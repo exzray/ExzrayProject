@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.pytho.exzrayproject.R;
-import com.example.pytho.exzrayproject.adapter.PostList;
+import com.example.pytho.exzrayproject.adapter.PostAdapter;
 
 
 public class MainPost extends Fragment {
@@ -38,7 +38,7 @@ public class MainPost extends Fragment {
 
         mRecyclerView = view.findViewById(R.id.post_recycler);
         mRecyclerView.setHasFixedSize(true);
-        mRecyclerView.setAdapter(new PostList());
+        mRecyclerView.setAdapter(new PostAdapter());
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(view.getContext(), ((LinearLayoutManager) mRecyclerView.getLayoutManager()).getOrientation()));
     }

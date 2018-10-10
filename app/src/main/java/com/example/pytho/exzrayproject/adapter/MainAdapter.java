@@ -16,7 +16,7 @@ import com.example.pytho.exzrayproject.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SwipeTab extends FragmentPagerAdapter {
+public class MainAdapter extends FragmentPagerAdapter {
 
     private int[] titles = {R.string.text_post, R.string.text_chat, R.string.text_event};
     private int[] icons = {R.drawable.ic_picture_in_picture_white_24dp, R.drawable.ic_chat_white_24dp, R.drawable.ic_event_note_white_24dp,};
@@ -26,7 +26,7 @@ public class SwipeTab extends FragmentPagerAdapter {
     private Toolbar mToolbar;
     private List<Fragment> mList;
 
-    public SwipeTab(FragmentManager fm, Toolbar toolbar, ViewPager pager, TabLayout tabLayout) {
+    public MainAdapter(FragmentManager fm, Toolbar toolbar, ViewPager pager, TabLayout tabLayout) {
         super(fm);
 
         mPager = pager;
