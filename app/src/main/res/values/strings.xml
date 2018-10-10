@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Go Chat</string>
+
+    <string name="text_search">search</string>
+    <string name="text_logout">logout</string>
+    <string name="text_post">Post</string>
+    <string name="text_chat">Chat</string>
+    <string name="text_event">Event</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_name">Nazirul Aiman</string>
+    <string name="text_date">Yesterday 10.00am</string>
+    <string name="text_description">description</string>
+    <string name="text_content">Hello world! This is default posting. Feel free to write more. There is more line.</string>
+</resources>
